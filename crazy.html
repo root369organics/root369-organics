@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crazy Perfume - Root 369 Organics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <p>
+    <a href="index.html">← Back to Home</a>
+    </p>
+
+```
+<a href="index.html">
+    <img src="logo root 369 transparent.png" width="120">
+</a>
+
+<h1>Root 369 Organics</h1>
+```
+
+</header>
+
+<section>
+    <h2>Crazy Perfume</h2>
+
+```
+<p style="color:#f4b400; font-size:20px; text-align:center;">
+⭐⭐⭐⭐⭐
+</p>
+
+<p style="text-align:center; font-weight:bold;">
+ Premium Luxury Fragrance
+</p>
+
+<!-- SLIDER -->
+<div class="slider">
+    <img src="crazy 1.png" class="slide active">
+    <img src="crazy 2.png" class="slide">
+
+    <!-- VIDEO -->
+    <video class="slide" autoplay muted loop>
+        <source src="crazy 2video.mp4" type="video/mp4">
+    </video>
+
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</div>
+
+<p><strong>Fragrance Notes:</strong></p>
+<ul>
+    <li>Sweet Floral Aroma</li>
+    <li>Soft Powdery Touch</li>
+    <li>Warm Vanilla & Musk Base</li>
+    <li>Elegant Feminine Scent</li>
+</ul>
+
+<p><strong>Benefits:</strong></p>
+<ul>
+    
+    <li>Long lasting premium scent</li>
+    <li>Perfect for daily & party wear</li>
+    <li>Gives classy and luxurious feel</li>
+</ul>
+
+<p><strong>How to Use:</strong></p>
+<ul>
+    <li>Apply on neck and wrists</li>
+    <li>Do not rub after applying</li>
+    <li>Use on clean skin for best result</li>
+</ul>
+
+<h3 style="color: green;">Price: Rs. 1000</h3>
+
+<table border="1" cellpadding="10" style="border-collapse: collapse; margin:20px auto;">
+<tr>
+    <td><strong>Category</strong></td>
+    <td>Perfume</td>
+</tr>
+<tr>
+    <td><strong>Volume</strong></td>
+    <td>30 ml</td>
+</tr>
+<tr>
+    <td><strong>Type</strong></td>
+    <td>Inspired by Coco</td>
+</tr>
+<tr>
+    <td><strong>Suitable For</strong></td>
+    <td>Women</td>
+</tr>
+</table>
+
+<a href="https://wa.me/923312268146" target="_blank" class="whatsapp-btn">
+📲 Order on WhatsApp
+</a>
+```
+
+</section>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+
+    // video stop
+    if (slides[index].tagName === "VIDEO") {
+        slides[index].pause();
+    }
+
+    index = (index + 1) % slides.length;
+
+    slides[index].classList.add("active");
+
+    // video play
+    if (slides[index].tagName === "VIDEO") {
+        slides[index].play();
+    }
+}, 2500);
+</script>
+
+</body>
+</html>
