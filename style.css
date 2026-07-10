@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial,sans-serif;
+    background:#f7f9f5;
+    color:#333;
+}
+
+header{
+    background:#E8F5D2;
+    padding:20px;
+    text-align:center;
+}
+
+header img{
+    width:90px;
+}
+
+header h2{
+    color:#145A32;
+    margin-top:10px;
+}
+nav{
+    background:#2E7D32;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    width:100%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#E8F5D2;
+    background:#145A32;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+.hero{
+    background:#E8F5D2;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+    color:#444;
+}
+
+.hero .whatsapp-btn{
+    display:inline-block;
+    margin-top:20px;
+    font-size:18px;
+    padding:15px 35px;
+}
+h1,h2{
+    color:#145A32;
+}
+
+button{
+    background:#2E7D32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#145A32;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+footer{
+    background:#145A32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}.product-card{
+    width:300px;
+    padding:15px;
+    margin:15px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    text-align:center;
+    display:inline-block;
+     vertical-align:top;
+}
+.product-image{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    background:white;
+    border-radius:10px;
+}
+   
+#products{
+    text-align:center;
+}
+#haircare{
+    width:100%;
+    text-align:center;
+    color:#145A32;
+    margin:25px 0 20px;
+}
+#fragrances{
+    width:100%;
+    text-align:center;
+    color:#145A32;
+    margin:30px 0 20px;
+}
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#25D366;
+    color:white;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    background:#1da851;
+}
+
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+.products{
+    flex-direction:column;
+    align-items:center;
+}
+
+.product-card{
+    width:90%;
+}
+
+.review-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.contact{
+    padding:20px;
+}
+
+footer{
+    padding:20px;
+}
+
+}
+.products{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+.product-image:hover{
+    transform: scale(1.05);
+    transition:0.3s;
+}
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+.slider{
+    width:100%;
+    max-width:400px;
+    margin:20px auto;
+    position:relative;
+}
+
+.slide{
+    width:100%;
+    display:none;
+    border-radius:15px;
+}
+
+.slide.active{
+    display:block;
+}
+.slider {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.product-card {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.hero-section {
+    width: 100%;
+    height: 400px; /* height control */
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 IMPORTANT */
+}
+.hero {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 400px; /* height control kar sakti ho */
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* 🔥 sab se important */
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+/* FORCE FULL WIDTH SLIDER (FINAL FIX) */
+
+.slider {
+    width: 100% !important;
+    height: 90vh !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1 !important;
+}
+.hero{
+    padding:0 !important;
+}
+.slider{
+    width:100%;
+    height:400px;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    width:100%;
+    height:400px;
+    object-fit:contain;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+    cursor: pointer;   /* 👈 yeh line add karni hai */
+}
+
+.slide.active {
+    display: block;
+}
+#products {
+    text-align: center;
+}
+
+#products .product-card {
+    display: inline-block;
+    width: 220px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+#products .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}

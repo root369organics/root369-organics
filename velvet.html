@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Smoke Perfume - Root 369 Organics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <p>
+        <a href="index.html">← Back to Home</a>
+    </p>
+
+    <a href="index.html">
+        <img src="logo root 369 transparent.png" width="120">
+    </a>
+
+    <h1>Root 369 Organics</h1>
+</header>
+
+<section>
+    <h2>Velvet Smoke Perfume</h2>
+
+    <p style="color:#f4b400; font-size:20px; text-align:center;">
+        ⭐⭐⭐⭐⭐
+    </p>
+
+    <p style="text-align:center; font-weight:bold;">
+        Bold Smoky Luxury Fragrance
+    </p>
+
+    <div class="slider">
+        <img src="velvet 1.png" class="slide active">
+
+        <video class="slide" muted loop playsinline>
+            <source src="velvet.mp4" type="video/mp4">
+        </video>
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+    <p><strong>Fragrance Notes:</strong></p>
+    <ul>
+        <li>Deep Smoky Aroma</li>
+        <li>Warm Woody Notes</li>
+        <li>Soft Musk Base</li>
+        <li>Luxury Bold Scent</li>
+    </ul>
+
+    <p><strong>Benefits:</strong></p>
+    <ul>
+        <li>Long lasting fragrance (6–8 hours)</li>
+        <li>Premium luxury feel</li>
+        <li>Perfect for evening & special events</li>
+        <li>Strong and attractive scent</li>
+    </ul>
+
+    <p><strong>How to Use:</strong></p>
+    <ul>
+        <li>Apply on neck and wrists</li>
+        <li>Do not rub after applying</li>
+        <li>Use on clean skin</li>
+    </ul>
+
+    <h3 style="color: green;">Price: Rs. 1000</h3>
+
+    <table border="1" cellpadding="10" style="border-collapse: collapse; margin:20px auto;">
+        <tr>
+            <td><strong>Category</strong></td>
+            <td>Perfume</td>
+        </tr>
+        <tr>
+            <td><strong>Volume</strong></td>
+            <td>30 ml</td>
+        </tr>
+        <tr>
+            <td><strong>Lasting</strong></td>
+            <td>6 – 8 Hours</td>
+        </tr>
+        <tr>
+            <td><strong>Suitable For</strong></td>
+            <td>Men & Women</td>
+        </tr>
+    </table>
+
+    <a href="https://wa.me/923312268146" target="_blank" class="whatsapp-btn">
+        📲 Order on WhatsApp
+    </a>
+
+</section>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+
+    if (slides[index].tagName === "VIDEO") {
+        slides[index].pause();
+    }
+
+    index = (index + 1) % slides.length;
+
+    slides[index].classList.add("active");
+
+    if (slides[index].tagName === "VIDEO") {
+        slides[index].play();
+    }
+}, 3000);
+</script>
+
+</body>
+</html>
