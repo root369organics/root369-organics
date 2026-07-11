@@ -117,7 +117,8 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
-}.product-card{
+}
+.product-card{
     width:300px;
     padding:15px;
     margin:15px;
@@ -210,8 +211,8 @@ nav{
 footer{
     padding:20px;
 }
-
 }
+
 .products{
     display:flex;
     justify-content:center;
@@ -226,44 +227,9 @@ footer{
     transform:translateY(-10px);
     box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
-.slider{
-    width:100%;
-    max-width:400px;
-    margin:20px auto;
-    position:relative;
-}
 
-.slide{
-    width:100%;
-    display:none;
-    border-radius:15px;
-}
 
-.slide.active{
-    display:block;
-}
-.slider {
-    position: relative;
-    max-width: 400px;
-    margin: auto;
-}
 
-.slide {
-    width: 100%;
-    display: none;
-    border-radius: 10px;
-}
-
-.slide.active {
-    display: block;
-}
-.slide {
-    width: 100%;
-    display: none;
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
 
 .slide.active {
     display: block;
@@ -308,99 +274,9 @@ footer{
     width: 100%;
     border-radius: 10px;
 }
-.hero-section {
-    width: 100%;
-    height: 400px; /* height control */
-    overflow: hidden;
-}
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 🔥 IMPORTANT */
-}
-.hero {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
 
-.slider {
-    width: 100%;
-    height: 400px; /* height control kar sakti ho */
-    overflow: hidden;
-    position: relative;
-}
 
-.slide {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; /* 🔥 sab se important */
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.slide.active {
-    opacity: 1;
-}
-/* FORCE FULL WIDTH SLIDER (FINAL FIX) */
-
-.slider {
-    width: 100% !important;
-    height: 90vh !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    position: relative;
-    overflow: hidden;
-}
-
-.slide {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-    opacity: 1 !important;
-}
-.hero{
-    padding:0 !important;
-}
-.slider{
-    width:100%;
-    height:400px;
-    position:relative;
-    overflow:hidden;
-}
-
-.slide{
-    width:100%;
-    height:400px;
-    object-fit:contain;
-    display:none;
-}
-
-.slide.active{
-    display:block;
-}
-.slide {
-    width: 100%;
-    height: auto;
-    display: none;
-    cursor: pointer;   /* 👈 yeh line add karni hai */
-}
-
-.slide.active {
-    display: block;
-}
 #products {
     text-align: center;
 }
@@ -429,4 +305,26 @@ footer{
     text-decoration: none;
     color: inherit;
     display: block;
+}
+.slider{
+    width:100%;
+    height:auto;
+    margin:20px auto;
+    position:relative;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.slide{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    display:none;
+    border-radius:15px;
+}
+
+.slide.active{
+    display:block;
 }
